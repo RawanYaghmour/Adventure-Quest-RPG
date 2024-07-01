@@ -1,12 +1,12 @@
-# Adventure-Quest-RPG
+# 🏰 Adventure-Quest-RPG 🐉
 
-## Purpose of the program
+## 🎯 Purpose of the Program
 The Adventure Quest RPG is a console application where players embark on epic journeys, battle monsters, and explore dungeons.
 
 
 
 
-## How to run the program
+## 🚀How to run the program
 1. **Clone the repository:**
 2. **Navigate to the project directory:**
 3. **Compile and run the program:**
@@ -14,7 +14,7 @@ The Adventure Quest RPG is a console application where players embark on epic jo
 -Choose an option from the menu to perform an action (e.g., read, add, delete, count, or search entries).
 -Follow the prompts to provide necessary inputs (e.g., date, content, keywords).
 
-## Features
+## ✨Features
 
 # Player and Monster Classes:
 
@@ -24,8 +24,8 @@ Monster: Represents the monster characters in the game, inheriting properties fr
 
 # Battle System:
 
-Attack Method: Simulates an attack between two characters, calculating and applying damage based on their attributes.
-StartBattle Method: Initiates and manages the battle between the player and a monster, alternating turns until one is defeated.
+⚔️ Attack Method: Simulates an attack between two characters, calculating and applying damage based on their attributes.
+🛡️ StartBattle Method: Initiates and manages the battle between the player and a monster, alternating turns until one is defeated.
 
 ## Additional information or notes
 Error Handling: The application includes basic error handling to manage unexpected inputs and scenarios.
@@ -34,5 +34,13 @@ Data Initialization: Default values for player and monster attributes are set in
 ## Enjoy Your Adventure Quest RPG!
 Embark on epic battles and see if you can defeat the monsters in this thrilling console RPG game!
 
+## 🧪 XUnit Tests
+# Attack Method Tests:
 
+✅ Verify that the Attack method correctly reduces the health of the target (enemy) when the player attacks.
+✅ Verify that the Attack method correctly reduces the health of the target (player) when the enemy attacks.
+
+# Battle Outcome Tests:
+
+✅ Assert that the winner's health is greater than zero after winning the battle.
 
