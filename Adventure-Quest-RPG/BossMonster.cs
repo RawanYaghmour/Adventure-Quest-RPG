@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Adventure_Quest_RPG
 {
-    public class GreenMonster : monster
+    public class BossMonster : monster
     {
-        public GreenMonster() : base("Green", 100, 25, 8)
+        public BossMonster() : base("BossMonster", 100, 25, 8)
         {
         }
     }
