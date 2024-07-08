@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Adventure_Quest_RPG
 {
-    public class GreenMonster : monster
+    public class potion:Item
     {
-        public GreenMonster() : base("Green", 100, 25, 8)
+        public potion() : base("potion", "using a potion will increase your health by +20", 20)
         {
         }
     }

@@ -4,24 +4,20 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to the RPG game!");
+            Console.WriteLine("\nEnter your name \n");
             try
             {
-
-                Player firstPLayer = new Player("Hubot ", 50);
-                GreenMonster green = new GreenMonster();
-                BattleSystem.StartStartBattle(firstPLayer, green);
-
-
+                Adventure adventure = new Adventure();
+                adventure.StartAdventure();
             }
             catch (Exception ex)
             {
-                Console.WriteLine(" Error occurred:", ex.Message);
+                Console.WriteLine(ex.ToString());
             }
 
 
-
-
-            Console.WriteLine("\nAdventure complete!");
+            Console.WriteLine("\nFinsh Game!");
         }
     }
 }

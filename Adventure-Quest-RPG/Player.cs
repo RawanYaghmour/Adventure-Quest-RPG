@@ -9,13 +9,16 @@ namespace Adventure_Quest_RPG
 {
     public class Player : Character
     {
-        public Player(string name, int attackPower = 60)
+
+        public Inventory Inventory { get; set; }
+        public Player(string name, int attackPower )
         {
 
             Name = name;
-            Health = 100;
+            Health = 200;
             AttackPower = attackPower;
-            Defense = 20;
+            Defense = 50;
+            Inventory = new Inventory();
         }
     }
 }

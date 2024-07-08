@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Adventure_Quest_RPG
 {
-    public abstract class Character
+    public abstract class Character : IBattleStates
     {
         public string Name { get; set; }
         public int Health { get; set; }
@@ -15,10 +15,21 @@ namespace Adventure_Quest_RPG
 
         public void CalculateDamage(int damage)
         {
-            Health -= damage;
-            Health = Math.Max(Health, 0);
+            if (Defense >= damage)
+            {
+                Defense -= damage;
+            }
+            else
+            {
+                int remainingDamage = damage - Defense;
+                Defense = 0;
+                Health -= remainingDamage;
 
-
+                if (Health < 0)
+                {
+                    Health = 0;
+                }
+            }
         }
     }
 }
