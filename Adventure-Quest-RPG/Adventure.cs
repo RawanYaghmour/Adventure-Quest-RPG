@@ -225,7 +225,7 @@ namespace Adventure_Quest_RPG
             if (isPlayerWin)
             {
                 Console.WriteLine($"You defeated the {randomMonster.Name} monster!\n");
-                //level++;
+                level++;
             }
             else
             {
