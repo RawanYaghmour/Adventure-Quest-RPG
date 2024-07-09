@@ -1,46 +1,84 @@
-# 🏰 Adventure-Quest-RPG 🐉
+# :european_castle: Adventure Quest RPG :dragon:
 
-## 🎯 Purpose of the Program
-The Adventure Quest RPG is a console application where players embark on epic journeys, battle monsters, and explore dungeons.
+Adventure Quest RPG is a console-based role-playing game where players embark on an adventure, fight monsters, discover new locations, and collect items to improve their abilities.
 
+## Table of Contents
 
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Game Flow](#game-flow)
+- [XUnit Tests](#XUnit-Tests)
 
+## Features :sun_with_face:	
 
-## 🚀How to run the program
-1. **Clone the repository:**
-2. **Navigate to the project directory:**
-3. **Compile and run the program:**
-4. **Follow the on-screen instructions:**
--Choose an option from the menu to perform an action (e.g., read, add, delete, count, or search entries).
--Follow the prompts to provide necessary inputs (e.g., date, content, keywords).
+- Explore different locations: Forest, Cave, and Tower.
+- Fight various monsters, including ordinary monsters and boss monsters.
+- Collect and use items to boost health, defense, and attack power.
+- Level up and progress through the game.
+- View inventory and manage collected items.
 
-## ✨Features
+## Installation
 
-# Player and Monster Classes:
+1. Clone the repository:
+    ```sh
+    git@github.com:RawanYaghmour/Adventure-Quest-RPG.git
+    ```
 
-The Player and Monster are subclasses of the abstract Character class.
-Player: Represents the player-controlled character with properties like Name, Health, AttackPower, and Defense.
-Monster: Represents the monster characters in the game, inheriting properties from the Character class.
+2. Navigate to the project directory:
+    ```sh
+    cd Adventure-Quest-RPG
+    ```
 
-# Battle System:
+3. Restore the dependencies and build the project:
+    ```sh
+    dotnet restore
+    dotnet build
+    ```
 
-⚔️ Attack Method: Simulates an attack between two characters, calculating and applying damage based on their attributes.
-🛡️ StartBattle Method: Initiates and manages the battle between the player and a monster, alternating turns until one is defeated.
+## Usage
 
-## Additional information or notes
-Error Handling: The application includes basic error handling to manage unexpected inputs and scenarios.
-Data Initialization: Default values for player and monster attributes are set in their respective constructors.
+1. Run the application:
+    ```sh
+    dotnet run
+    ```
 
-## Enjoy Your Adventure Quest RPG!
-Embark on epic battles and see if you can defeat the monsters in this thrilling console RPG game!
+2. Follow the prompts in the console to navigate through the game.
+
+## Game Flow
+
+1. **Start the Game**: Enter your player name and begin your adventure.
+2. **Main Menu**:
+    - Press `1` to discover a new location.
+    - Press `2` to show your current location.
+    - Press `3` to attack a monster.
+    - Press `4` to view the inventory.
+    - Press `5` to end the game.
+3. **Discover Locations**: Choose between Forest, Cave, and Tower.
+4. **Fight Monsters**: Engage in battles with random monsters and level up.
+5. **Collect Items**: Win items after battles and decide whether to use them immediately or add them to your inventory.
+6. **End the Game**: Conclude your adventure when you reach level 5, run out of health, or choose to end the game from the menu.
 
 ## 🧪 XUnit Tests
-# Attack Method Tests:
+
+### Attack Method Tests:
 
 ✅ Verify that the Attack method correctly reduces the health of the target (enemy) when the player attacks.
+
 ✅ Verify that the Attack method correctly reduces the health of the target (player) when the enemy attacks.
 
-# Battle Outcome Tests:
+### Battle Outcome Tests:
 
 ✅ Assert that the winner's health is greater than zero after winning the battle.
 
+### Location Tests:
+
+✅ Verify that the chosen location is correctly set.
+
+### Monster Encounter Tests:
+
+✅ Verify that a boss monster can be encountered within 100 attempts.
+
+
+## Enjoy Your Adventure Quest RPG!
+Embark on epic battles and see if you can defeat the monsters in this thrilling console RPG game!
